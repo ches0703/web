@@ -1,7 +1,23 @@
- .red{
-    color: red;
- }
- #abc{
-    color: blue;
- }
- 
+body{
+   padding: 100px;
+}
+.container{
+   width: 500px;
+   height: 100px;
+   background-color: royalblue;
+   perspective: 500px;
+}
+.item{
+   width: 100px;
+   height: 100px;
+   background-color: orange;
+   transition: 1s;
+   font-size: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.item:hover{
+   transform: rotateY(720deg);
+   backface-visibility:hidden;
+}
